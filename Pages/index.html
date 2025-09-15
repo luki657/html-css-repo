@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <title>Page WhatsApp | clone</title>
+    <style>
+      * {
+        margin: 0; 
+        padding: 0;
+        font-family: Arial, verdana, times ;
+      }
+      
+      ::webkit-scroolbar {
+        width: 0;
+        height: 0;
+      }
+      
+      body, html {
+        background: #000;
+      }
+      
+      .container-home {
+        width: 100vw;
+        height: 100vh;
+      }
+      
+      div.header-home {
+        background: #000;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        width: 100vw;
+        height: 150px;
+        box-shadow: 0px 1px 1px gray;
+      }
+      
+      div.header-home h1 {
+        margin: 10px;
+        padding: 20px;
+        color: #fff;
+        font-size: 3.5em;
+        font-weight: bolder;
+      }
+      
+      div.header-home h1 > a {
+        text-decoration: none; 
+        color: white;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin-right: 40px;
+      }
+      
+      .header-home nav ul li {
+        display: inline-block;
+        margin: 15px;
+      }
+      
+      nav ul li > a {
+        text-decoration: none; 
+        color: #fff;
+      }
+      
+      .btn-group {
+        width: 80vw;
+        margin: auto;
+      }
+      
+      div.btn-group nav ul {
+        padding-top: 30px;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .btn-group nav ul li {
+        background: green;
+        border: 1px solid lightgray;
+        border-radius: 15px; 
+        padding: 5px; 
+      }
+      
+      .chat {
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        
+      }
+      
+      .conv-chat {
+       position: relative;
+       padding: 20px; 
+       margin: 5px;
+      }
+      
+      .avatar {
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder;
+        padding: 10px;
+        width: 60px;
+        background: linear-gradient(to bottom, lightgreen, darkgreen);
+        border-radius: 50%;
+      } 
+      
+      .conv-chat h1 {
+        position: absolute;
+        left: 110px;
+        top: 20px ;
+        
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 10px;
+      }
+      
+      .msg {
+        position: absolute;
+        left: 130px;
+        top: 55px ;
+        
+        font-weight: normal;
+        font-size: 16px;
+        padding: 10px;
+      }
+      
+      .check {
+        position: absolute;
+        left: 110px;
+        top: 55px ;
+        
+        color: #75ddff;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 10px;
+        margin-right: 5px;
+      }
+      
+      .hora {
+       position: absolute;
+       left: 95%;
+       top: 20px ;
+       
+       transform: translate(-95%);
+       
+       color: lightgray;
+       font-weight: normal;
+       font-size: 16px;
+       padding: 10px;
+       margin-left: 5px; 
+      }
+      
+      .new-msg {
+       position: absolute;
+       left: 95%;
+       top: 55px ;
+       
+       transform: translate(-95%);
+       
+       text-align: center;
+       background: lightgreen;
+       color: white;
+       font-weight: normal;
+       font-size: 12px;
+       padding: 5px;
+       border-radius: 50%;
+      }
+      
+      .flutter {
+        margin: 20px;
+        margin: auto;
+       
+      }
+      
+      .new-msgs {
+        position: sticky; 
+        top: 50%;
+        left: 90%;
+        
+        z-index: 2;
+        
+        text-align: center;
+        width: 40px;
+        border-radius: 20px;
+        background-color: lightgreen;
+        padding: 20px;
+        color: #000;
+        font-weight: bolder;
+        font-size: 30px;
+      }
+      
+      .metaia {
+        position: sticky; 
+        top: 35%;
+        left: 90%;
+        
+        z-index: 2;
+        
+        text-align: center;
+        padding: 20px; 
+        font-size: 30px; 
+        font-weight: bolder;
+        border-radius: 15px;
+        background: #ffe;
+        width: 30px;
+      }
+      
+      .rodape {
+        position: relative;
+        z-index: 2;
+        
+        background: blue;
+        width: 100vw; 
+        max-height: 30px;
+        box-shadow: 1px 2px 2px red;
+        color: #fff;
+        top: 90%;
+        background-color: #000;
+      }
+      
+    </style>
+</head>
+<body>
+  <section class="container-home">
+    <div class="header-home">
+      <h1><a href="first.html">WhatsApp</a></h1> 
+      <nav>
+      	<ul>
+      		<li><a href="#">🔍</a></li>
+      		<li><a href="#">📷</a></li>
+      		<li><a href="#">&#9776;</a></li>
+      	</ul>
+      </nav>
+    </div>
+    <div class="btn-group">
+      <nav>
+      	<ul>
+      		<li><a href="first.html">Todas</a></li>
+      		<li><a href="#">Não Lidas</a></li>
+      		<li><a href="#">Favoritos</a></li>
+      		<li><a href="#">Grupos</a></li>
+      		<li><a href="#">&nbsp; + &nbsp;</a></li>
+      	</ul>
+      </nav>
+    </div><!--Section header-->
+    <section class="chat">
+      <div class="conv-chat">
+        <div class="avatar">M</div>
+        <h1>Maria</h1> 
+        <span class="msg">Estou bem, só vocé que nunca mais veio em minha casa</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">👥</div>
+        <h1>Sexta Louca🍻</h1> 
+        <span class="msg">Modrick: Sobre amanhã, já tem local?</span> 
+        <span class="new-msg">10</span>
+        <span class="hora">14:00</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">K</div>
+        <h1>Kass</h1> 
+        <span class="msg">Eu: São coisas do gênero que fazem rico😁</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">G</div>
+        <h1>Gustavo</h1> 
+        <span class="msg" >Sendo Assim as coisas vão ser mais relaxadas de hoje
+        em diante</span> 
+        <span class="new-msg">&nbsp;1&nbsp;</span>
+        <span class="hora">15:10</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Alberto</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">v</div>
+        <h1>Walter Dior</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">E</div>
+        <h1>Eduardo</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">F</div>
+        <h1>Francisco</h1> 
+        <span class="msg">É como wi? Nunca mais, estás a fazer oque ?</span> 
+        <span class="check">√√</span>
+        <span class="hora">12:30</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">C</div>
+        <h1>Claúdia</h1> 
+        <span class="msg">Vamos nos ver hoje, certo?</span> 
+        <span class="check">√√</span>
+        <span class="hora">Ontem</span>
+      </div>
+      <div class="conv-chat">
+        <div class="avatar">A</div>
+        <h1>Ainstain</h1> 
+        <span class="msg">E sobre aquela bae?</span> 
+        <span class="check">√√</span>
+        <span class="hora">Ontem</span>
+      </div>
+    </section><!--section Conversas--> 
+  </section>
+  <section class="flutter"> <!--Campos flutuante-->
+      <div class="metaia">O</div> 
+      <div class="new-msgs">+</div>
+    </section>
+    <section class="rodape"><!--Footer-->
+      <span class="conv">Conversas</span>
+      <span class="conv">Atualizacões</span> 
+      <span class="conv">Comunidades</span> 
+      <span class="conv">Chamadas</span>
+    </section>
+</body>
+</html>
