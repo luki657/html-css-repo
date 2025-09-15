@@ -1,0 +1,215 @@
+  @charset "UTF-8";
+  
+  * {
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, verdana, times ;
+  }
+  
+  ::webkit-scroolbar {
+    width: 0;
+    height: 0;
+  }
+  
+  body, html {
+    background: #000;
+  }
+  
+  .container-home {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  div.header-home {
+    background: #000;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100vw;
+    height: 150px;
+    box-shadow: 0px 1px 1px gray;
+  }
+  
+  div.header-home h1 {
+    margin: 10px;
+    padding: 20px;
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: bolder;
+  }
+  
+  div.header-home h1 > a {
+    text-decoration: none; 
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin-right: 40px;
+  }
+  
+  .header-home nav ul li {
+    display: inline-block;
+    margin: 15px;
+  }
+  
+  nav ul li > a {
+    text-decoration: none; 
+    color: #fff;
+  }
+  
+  .btn-group {
+    width: 80vw;
+    margin: auto;
+  }
+  
+  div.btn-group nav ul {
+    padding-top: 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .btn-group nav ul li {
+    background: green;
+    border: 1px solid lightgray;
+    border-radius: 15px; 
+    padding: 5px; 
+  }
+  
+  .chat {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    
+  }
+  
+  .conv-chat {
+   position: relative;
+   padding: 20px; 
+   margin: 5px;
+  }
+  
+  .avatar {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 10px;
+    width: 60px;
+    background: linear-gradient(to bottom, lightgreen, darkgreen);
+    border-radius: 50%;
+  } 
+  
+  .conv-chat h1 {
+    position: absolute;
+    left: 110px;
+    top: 20px ;
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px;
+  }
+  
+  .msg {
+    position: absolute;
+    left: 130px;
+    top: 55px ;
+    
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .check {
+    position: absolute;
+    left: 110px;
+    top: 55px ;
+    
+    color: #75ddff;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 5px;
+  }
+  
+  .hora {
+   position: absolute;
+   left: 95%;
+   top: 20px ;
+   
+   transform: translate(-95%);
+   
+   color: lightgray;
+   font-weight: normal;
+   font-size: 16px;
+   padding: 10px;
+   margin-left: 5px; 
+  }
+  
+  .new-msg {
+   position: absolute;
+   left: 95%;
+   top: 55px ;
+   
+   transform: translate(-95%);
+   
+   text-align: center;
+   background: lightgreen;
+   color: white;
+   font-weight: normal;
+   font-size: 12px;
+   padding: 5px;
+   border-radius: 50%;
+  }
+  
+  .flutter {
+    margin: 20px;
+    margin: auto;
+   
+  }
+  
+  .new-msgs {
+    position: sticky; 
+    top: 50%;
+    left: 90%;
+    
+    z-index: 2;
+    
+    text-align: center;
+    width: 40px;
+    border-radius: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .metaia {
+    position: sticky; 
+    top: 35%;
+    left: 90%;
+    
+    z-index: 2;
+    
+    text-align: center;
+    padding: 20px; 
+    font-size: 30px; 
+    font-weight: bolder;
+    border-radius: 15px;
+    background: #ffe;
+    width: 30px;
+  }
+  
+  .rodape {
+    position: relative;
+    z-index: 2;
+    
+    background: blue;
+    width: 100vw; 
+    max-height: 30px;
+    box-shadow: 1px 2px 2px red;
+    color: #fff;
+    top: 90%;
+    background-color: #000;
+  }
