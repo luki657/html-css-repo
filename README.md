@@ -1,2 +1,2 @@
 # html-css-repo
-Tentando tudopara subir meus sites
+Criando e aprendendo fundamentos de web sites
