@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-  * {
+* {
     margin: 0; 
     padding: 0;
     font-family: Arial, verdana, times ;
@@ -11,7 +11,7 @@
     height: 0;
   }
   
-  body, html {
+  body {
     background: #0A1014;
   }
   
@@ -94,6 +94,11 @@
    margin: 5px;
   }
   
+  .conv-chat:hover {
+    background-color: #242424;
+    cursor: pointer;
+  }
+  
   .avatar {
     text-align: center;
     font-size: 3em;
@@ -152,7 +157,6 @@
   
   .flutter {
     position: relative;
-    display: block;
   }
   
   .new-msg {
