@@ -1,0 +1,120 @@
+@charset "UTF-8"; 
+
+* {
+  padding: 0; 
+  margin: 0;
+}
+
+:root {
+  --cor1: #745421;
+  --cor2: #422c08;
+  --cor3: #ffb141;
+}
+
+html, body {
+  font-family: Arial, Sans-Serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  height: 150vw;
+  padding: 40px 4%;
+}
+
+/* Header Configuration*/
+div.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff4a;
+  display: inline-block;
+}
+
+header a:hover {
+  color: #fff; 
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+
+
+header > .btn-contact, button {
+  background-color: #00ff08;
+  padding: 10px 30px ; 
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-contact > a {
+  color: #fff;
+  font-weight: bold; 
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #1fec1f;
+}
+
+.btn-contact > a:hover {
+  color: #000; 
+  transform: scale(1.05);
+}
+
+
+
+.sobre picture > img {
+  padding: 15px;
+  max-width: 400px;
+  min-width: 250px;
+  
+  position: absolute;
+  top: 190px;
+  left: 250px;
+  
+  /* transform: translate(-200px, -50px); */
+}
+
+/*Section About Me*/
+section.sobre {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.sobre > p {
+  width: 300px;
+  margin: auto;
+  text-align: justify;
+  padding: 10px;
+  
+  position: absolute;
+  top: 250px;
+  left: 50%;
+}
+
+.sobre > h1 {
+  width: 300px;
+  margin: auto;
+  text-align: justify;
+  padding: 10px;
+  
+  position: absolute;
+  top: 210px;
+  left: 50%;
+}
